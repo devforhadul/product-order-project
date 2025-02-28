@@ -88,28 +88,28 @@
               <div class="grid grid-cols-4 gap-2 mt-2">
                 <button
                   onclick="selectWristSize('S')"
-                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100"
+                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 size"
                   id="size-S"
                 >
                   S $69
                 </button>
                 <button
                   onclick="selectWristSize('M')"
-                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100"
+                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 size"
                   id="size-M"
                 >
                   M $79
                 </button>
                 <button
                   onclick="selectWristSize('L')"
-                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100"
+                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 size"
                   id="size-L"
                 >
                   L $89
                 </button>
                 <button
                   onclick="selectWristSize('XL')"
-                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100"
+                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 size"
                   id="size-XL"
                 >
                   XL $99
@@ -172,7 +172,7 @@
     <!-- Modal for Cart Preview -->
     <div
       id="cart-modal"
-      class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 hidden"
+      class="fixed inset-0 bg-gray-500/75 flex justify-center items-center z-50 hidden"
     >
       <div class="bg-white p-6 rounded-lg shadow-lg w-96 md:w-2/3 lg:w-1/2">
         <h2 class="text-xl font-bold text-gray-800">Your Cart</h2>
@@ -191,6 +191,7 @@
             </thead>
             <tbody id="cart-items">
               <!-- Cart items will go here dynamically -->
+ 
             </tbody>
           </table>
         </div>
@@ -216,3 +217,4 @@
     <script src="./scripts/app.js"></script>
   </body>
 </html>
+
